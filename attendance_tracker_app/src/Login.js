@@ -3,17 +3,32 @@ import React from 'react'
 class Login extends React.Component {
   constructor (props) {
     super(props)
-    // Store local variable is state, not needed for now
     this.state = {
-      states: false
+      error: null
+    }
+    // This page should be a form that sends all feild's value to the login function on submit
+  }
+
+  verifyLogin (credentials, unsecurepassword) {
+    // Secure Login with backend indentification, for now just grant access by default
+    if (unsecurepassword === 'unsecure-password') {
+      if (credentials === 'prof') this.props.loginProf()
+      else this.props.login()
+    } else {
+      this.setState({ error: 'Incorrect credentials, try again' })
     }
   }
 
   render () {
     return (
       <div className='Login'>
-        Login page goes here!
-        <button onClick={() => this.props.login('test credentials')}>Login</button>
+        <h1>Login page goes here!</h1>
+        <h3>{this.state.error}</h3>
+        <button onClick={() => this.verifyLogin('test credentials', 'unsecure-password')}>Login</button>
+        <div />
+        <button onClick={() => this.verifyLogin('prof', 'unsecure-password')}>Login as prof</button>
+        <div />
+        <button onClick={() => this.verifyLogin('test credentials', 'not unsecure-password')}>Login Error</button>
       </div>
     )
   }
