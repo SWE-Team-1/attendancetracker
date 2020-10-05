@@ -1,26 +1,33 @@
 import React from 'react'
-import logo from './logo.svg'
+import Login from './Login'
+import View from './View'
 import './App.css'
 
-function App () {
-  return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  )
+class App extends React.Component {
+  constructor (props) {
+    super(props)
+    // We can store user info in this top-level component
+    this.state = {
+      user: null,
+      loggedin: false
+    }
+  }
+
+  login (credentials) {
+    // Secure Login with backend indentification, for now just grant access by default
+    console.log('credentialt: ', credentials)
+    this.setState({ loggedin: !this.state.loggedin })
+  }
+
+  render () {
+    return (
+      <div className='App'>
+        <div className='App-header'>
+          {this.state.loggedin ? <View /> : <Login login={() => this.login()} />}
+        </div>
+      </div>
+    )
+  }
 }
 
 export default App
