@@ -12,9 +12,16 @@ class View extends React.Component {
   render () {
     return (
       <div className='View'>
-        <h1>View page goes here!</h1>
-        <p>User is a {this.props.prof ? 'prof' : 'student'}</p>
-        <button onClick={() => this.props.logout()}>Logout</button>
+        <div className='Header'>
+          Morgan: Header goes here!
+        </div>
+        <div>
+          <h1>
+            Yiran: View page goes here!
+          </h1>
+          <p>User is a {this.props.prof ? 'prof' : 'student'}</p>
+          <button onClick={() => this.props.logout()}>Logout</button>
+        </div>
       </div>
     )
   }

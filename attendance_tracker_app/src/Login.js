@@ -22,7 +22,8 @@ class Login extends React.Component {
   render () {
     return (
       <div className='Login'>
-        <h1>Login page goes here!</h1>
+        <h1>Ryan: Login page goes here!</h1>
+        <input />
         <h3>{this.state.error}</h3>
         <button onClick={() => this.verifyLogin('test credentials', 'unsecure-password')}>Login</button>
         <div />
