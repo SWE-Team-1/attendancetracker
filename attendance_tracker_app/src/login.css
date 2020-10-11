@@ -1,0 +1,34 @@
+.box1{
+    background-color: white;
+    height: 500px;
+    width: 1000px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.box2{
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.box3{
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    left: 500px;
+    bottom: 530px;
+    border-radius: 5px;
+
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color: black;
+}
