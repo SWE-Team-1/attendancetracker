@@ -24,15 +24,14 @@ class Login extends React.Component {
     return (
       <div className='Login'>
         <div className='box1'>
-        <div className='box2'>
+          <div className='box2'>
             <h1>Picture goes here</h1>
           </div>
           <div className='box3'>
             <h1>Login</h1>
+            <input type='email' placeholder='Email' />
             <div />
-            <input type="email" placeholder="Email"/>
-            <div />
-            <input type="password" placeholder="Password"/>
+            <input type='password' placeholder='Password' />
             <div />
             <h3>{this.state.error}</h3>
             <button onClick={() => this.verifyLogin('test credentials', 'unsecure-password')}>Login</button>
