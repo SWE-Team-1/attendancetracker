@@ -1,0 +1,52 @@
+.titleCourses {
+    font-size: 26px;
+    text-indent: 100px;
+    margin-top: 130px;
+}
+
+.totalFrame {
+    padding-left: 100px;
+    height: 760px;
+    width: 100%;
+}
+
+.editCourse {
+    padding-left: 80%;
+    height: 120px;
+    width: 550px;
+}
+
+.courses {
+    float: left;
+    height: 235px;
+    width: 315px;
+    background-color: rgb(204, 0, 0);
+    border-radius: 20px;
+    margin-left: 80px;
+    margin-top: 80px;
+    border: .1px solid rgb(112, 112, 112);
+}
+
+.editButton {
+    display: block;
+    height: 60px;
+    width: 260px;
+    margin-right: 160px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 58px;
+    font-weight: 600;
+}
+
+.addCourse {
+    background-color: rgb(204, 0, 0);
+    border: .1px solid rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-shadow: .1px .1px 2px rgb(0, 0, 0);
+}
+
+.removeCourse {
+    color: rgb(94, 94, 94);
+    text-shadow: .1px .1px 0px rgb(0, 0, 0);
+}

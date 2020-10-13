@@ -1,4 +1,5 @@
 import React from 'react'
+import './View.css'
 
 class View extends React.Component {
   constructor (props) {
@@ -15,12 +16,22 @@ class View extends React.Component {
         <div className='Header'>
           Morgan: Header goes here!
         </div>
+        <p>User is a {this.props.prof ? 'prof' : 'student'}</p>
+        <button onClick={() => this.props.logout()}>Logout</button>
+
         <div>
-          <h1>
-            Yiran: View page goes here!
-          </h1>
-          <p>User is a {this.props.prof ? 'prof' : 'student'}</p>
-          <button onClick={() => this.props.logout()}>Logout</button>
+          <h5 class='titleCourses'>Your Courses</h5>
+          <div class='totalFrame'>
+            <a href='#' class='courses'></a>
+            <a href='#' class='courses'></a>
+            <a href='#' class='courses'></a>
+            <a href='#' class='courses'></a>
+            <a href='#' class='courses'></a>
+          </div>
+          <div class='editCourse'>
+            <a href='#' class='editButton addCourse'>ADD NEW COURSE</a>
+            <a href='#' class='editButton removeCourse'>REMOVE COURSE</a>
+          </div>
         </div>
       </div>
     )
