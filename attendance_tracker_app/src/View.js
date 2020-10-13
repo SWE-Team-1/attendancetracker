@@ -20,17 +20,17 @@ class View extends React.Component {
         <button onClick={() => this.props.logout()}>Logout</button>
 
         <div>
-          <h5 class='titleCourses'>Your Courses</h5>
-          <div class='totalFrame'>
-            <a href='#' class='courses'></a>
-            <a href='#' class='courses'></a>
-            <a href='#' class='courses'></a>
-            <a href='#' class='courses'></a>
-            <a href='#' class='courses'></a>
+          <h5 class='View-Title-Courses'>Your Courses</h5>
+          <div class='View-Total-Frame'>
+            <a href='#' class='View-Courses'></a>
+            <a href='#' class='View-Courses'></a>
+            <a href='#' class='View-Courses'></a>
+            <a href='#' class='View-Courses'></a>
+            <a href='#' class='View-Courses'></a>
           </div>
-          <div class='editCourse'>
-            <a href='#' class='editButton addCourse'>ADD NEW COURSE</a>
-            <a href='#' class='editButton removeCourse'>REMOVE COURSE</a>
+          <div class='View-Edit-Course'>
+            <a href='#' class='View-Edit-Button View-Add-Course'>ADD NEW COURSE</a>
+            <a href='#' class='View-Edit-Button View-Remove-Course'>REMOVE COURSE</a>
           </div>
         </div>
       </div>
