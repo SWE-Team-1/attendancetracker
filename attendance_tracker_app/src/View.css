@@ -1,7 +1,20 @@
-.View-Container{
+/* Clear the default margins and paddings */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* This is for the entire body */
+
+.View-Container {
     background-color: var(--White);
     height: 90vh;
 }
+
+
+/* The 'Your Courses' header */
 
 .View-Title-Courses {
     font-size: xx-large;
@@ -11,16 +24,26 @@
     margin: 0;
 }
 
+
+/* Div for the courses blocks */
+
 .View-Total-Frame {
+    overflow: hidden;
     width: 100%;
 }
 
+
+/* Div for the two buttons */
+
 .View-Edit-Course {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    right: 0;
+    right: 0; */
     text-decoration: none;
 }
+
+
+/* Each course blocks */
 
 .View-Courses {
     float: left;
@@ -28,9 +51,19 @@
     width: 315px;
     background-color: var(--Red);
     border-radius: 20px;
-    margin: 20px;
-    border: .1px solid var(--Gray);
+    margin: 40px 0px 0px 50px;
+    border: 0.1px solid var(--Gray);
 }
+
+
+/* The box contains the buttons */
+
+.View-Area-Button {
+    padding-left: 65%;
+}
+
+
+/* set up common styles for two buttons */
 
 .View-Edit-Button {
     display: block;
@@ -42,15 +75,37 @@
     text-decoration: none;
 }
 
+
+/* The add course button */
+
 .View-Add-Course {
+    margin-top: 25px;
     background-color: var(--Red);
-    border: .1px solid var(--Gray);
+    border: 0.1px solid var(--Gray);
     color: var(--White);
-    border-radius: 20px;
-    text-shadow: .1px .1px 2px var(--Black);
+    border-radius: 25px;
+    text-shadow: 0.1px 0.1px 2px var(--Black);
 }
+
+
+/* The remove course button */
 
 .View-Remove-Course {
     color: var(--Gray);
-    text-shadow: .1px .1px 0px var(--Black);
+    text-shadow: 0.1px 0.1px 0px var(--White);
+}
+
+
+/* color change for hover */
+
+.View-Add-Course:hover {
+    background-color: var(--BrightRed);
+}
+
+.View-Courses:hover {
+    background-color: var(--BrightRed);
+}
+
+.View-Remove-Course:hover {
+    color: var(--BrightGray);
 }
