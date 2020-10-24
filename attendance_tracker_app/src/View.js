@@ -14,7 +14,11 @@ class View extends React.Component {
     return (
       <div className='View'>
         <div className='Header'>
-          Morgan: Header goes here!
+          <a align="left">ATTENDANCE TRACKER</a>
+            <a class="button" href="#top">COURSES</a>
+            <a class="button" href="#top">INBOX</a>
+            <a class="button" href="#top">SETTINGS</a>
+            <a class=".secondary-button" href="./Login.js" align="right">LOG OUT</a>
         </div>
         <p>User is a {this.props.prof ? 'prof' : 'student'}</p>
         <button onClick={() => this.props.logout()}>Logout</button>
