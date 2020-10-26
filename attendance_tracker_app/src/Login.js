@@ -1,5 +1,6 @@
 import React from 'react'
 import './login.css'
+import loginImage from './graphic_assets/Login_Image.svg';
 
 class Login extends React.Component {
   constructor (props) {
@@ -25,7 +26,7 @@ class Login extends React.Component {
       <div className='Login'>
         <div className='box1'>
           <div className='box2'>
-            <h1 className='Login-Image'>Picture goes here</h1>
+            <img className='image' src={loginImage} alt="Login Image" />
           </div>
           <div className='box3'>
             <h4 className='Login-Header'>Login</h4>
@@ -38,7 +39,7 @@ class Login extends React.Component {
             <div />
             <button className='Login-Button' onClick={() => this.verifyLogin('prof', 'unsecure-password')}>TEMP: Login as prof</button>
             <p className='Login-Forgot-Email'>Forgot Password?</p>
-            <p className='Login-Account'>Create your Account -></p>
+            <p className='Login-Account'>Create your Account</p>
           </div>
         </div>
       </div>
