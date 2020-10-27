@@ -43,7 +43,7 @@ class Login extends React.Component {
             <br />
             <a href='#' className='Login-Forgot-Email'>Forgot Password?</a>
             <br />
-            <a href='#' className='Login-Account'>Create your Account -></a>
+            <a href='#' className='Login-Account'>Create your Account</a>
 
           </div>
         </div>
