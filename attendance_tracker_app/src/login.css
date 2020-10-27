@@ -26,7 +26,11 @@
 }
 
 .Login-Image{
-    margin: 160px 0;
+    display: block;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: auto;
+    width: 80%;
 }
 
 .Login-Header{
@@ -48,12 +52,4 @@
     position: absolute;
     width: 100%;
     bottom: 0;
-}
-
-.image{
-    display: block;
-    margin-top: 80px;
-    margin-left: 100px;
-    margin-right: auto;
-    width: 80%;
 }
