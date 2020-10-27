@@ -26,7 +26,8 @@ class Login extends React.Component {
       <div className='Login'>
         <div className='box1'>
           <div className='box2'>
-            <img className='Login-Image' src={loginImage} alt="Login Image" />
+        <img className='Login-Image' src={loginImage} alt="Login Image" />
+
           </div>
           <div className='box3'>
             <h4 className='Login-Header'>Login</h4>
@@ -38,8 +39,12 @@ class Login extends React.Component {
             <button className='Login-Button' onClick={() => this.verifyLogin('test credentials', 'unsecure-password')}>Login</button>
             <div />
             <button className='Login-Button' onClick={() => this.verifyLogin('prof', 'unsecure-password')}>TEMP: Login as prof</button>
-            <p className='Login-Forgot-Email'>Forgot Password?</p>
-            <p className='Login-Account'>Create your Account</p>
+
+            <br />
+            <a href='#' className='Login-Forgot-Email'>Forgot Password?</a>
+            <br />
+            <a href='#' className='Login-Account'>Create your Account -></a>
+
           </div>
         </div>
       </div>
