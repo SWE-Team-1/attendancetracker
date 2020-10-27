@@ -25,7 +25,7 @@ class Login extends React.Component {
       <div className='Login'>
         <div className='box1'>
           <div className='box2'>
-            <h1 className='Login-Image' ></h1>
+           
           </div>
           <div className='box3'>
             <h4 className='Login-Header'>Login</h4>
